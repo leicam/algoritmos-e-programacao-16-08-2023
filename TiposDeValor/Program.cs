@@ -114,6 +114,34 @@
 
             #endregion Variaveis boolean
 
+            #region Variaveis char e string
+
+            char minhaVariavelCaractereUm = 'J';
+            string minhaVariavelStringUm = "Juliano";
+
+            Console.WriteLine("Digite seu nome: ");
+            
+            string nomeDigitado = Console.ReadLine();
+            string mensagemUm = "Olá " + nomeDigitado + "!!!";
+            string mensagemDois = $"Olá {nomeDigitado}!!!";
+            string mensagemTres = string
+                .Concat("Olá ", nomeDigitado, "!!!");
+            string mensagemFormatada = "Olá {0}!!!";
+            string nomeJoao = "João";
+
+            Console.WriteLine(mensagemUm);
+            Console.WriteLine(mensagemDois);
+            Console.WriteLine(mensagemTres);
+            Console.WriteLine(string.Format(mensagemFormatada, nomeDigitado));
+            Console.WriteLine("Tamanho do nome: " + nomeDigitado.Length);
+            Console.WriteLine("Seu nome é João? " + nomeJoao.Equals(nomeDigitado));
+            Console
+                .WriteLine("Formatação em maiusculo: " + nomeDigitado.ToUpper());
+            Console
+                .WriteLine("Formatação em minusculo: " + nomeDigitado.ToLower());
+
+            #endregion Variaveis char e string
+
             Console.ReadLine();
         }
     }
